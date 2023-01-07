@@ -67,4 +67,8 @@ button:hover {
 
 h1.Temp {
     margin: 0;
+
+}
+.description {
+    text-transform: capitalize;
 }

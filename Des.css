@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #222;
-    background-image:url(https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg?cs=srgb&dl=pexels-johannes-plenio-1102915.jpg&fm=jpg ) ;
+    background-image:url('https://source.unsplash.com/1600x900/?landscape') ;
     background-size: cover;
     background-repeat: no-repeat;
     font-size:120% ;
@@ -61,6 +61,12 @@ button:hover {
 h1.Temp {
     margin: 0;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 button:hover {
     background: #7c7c7c6b;
 }
@@ -71,4 +77,21 @@ h1.Temp {
 }
 .description {
     text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.Weather.loading::after{
+    visibility: visible;
+    content: "loading...";
+    color : white;
+    position: absolute;
+    top : 0;
+    left: 20px;
+  
 }

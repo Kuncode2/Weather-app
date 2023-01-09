@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="/Action.js">
+    <script src="/Action.js" defer>
       document
     </script>
     <link rel="stylesheet" href="Des.css">
@@ -31,12 +31,14 @@
         </button>
       </div>
      <div class="div">
-      <div class="Weather">
+      <div class="weather loading">
 
         <h2 class="city">Weather in India</h2>
         <h1 class="temp">51°C</h1>
-        <img src="" alt="" class="icon" />
-        <div class="description">Cloudy</div>
+        <div class="flex">
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
         <div class="humidity">Humidity: 0.2%</div>
     </div>
       </div>
